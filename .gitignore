@@ -2,3 +2,4 @@ data/
 !data/docs
 output/
 /output
+__pycache__
