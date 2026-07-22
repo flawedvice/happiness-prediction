@@ -100,3 +100,12 @@ docker run -p 80:80 happiness-api
 ## Data
 
 Source CSVs and cleaned tables are in the `data/` folder. Datasets were obtained both manually and dynamically from the World Happiness Report and the World Bank Data Bank, respectively. Details about the data sources and the data collection process can be found at the beginning of the Jupyter notebook `analysis.ipynb`.
+
+## Results
+
+| Metric | Value (Test Set) |
+| ------ | ---------------- |
+| R²     | $0.9577$         |
+| RMSE   | $0.2242$         |
+
+The model explains ~$96$% of the variance in national happiness scores, with an average prediction error of $±0.22$ points on the happiness scale (range: $0.0$ - $10.0$). Key predictive features include education, health, and access to basic services related indicators.
